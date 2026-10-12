@@ -1,0 +1,211 @@
+    1  hostname
+    2  ip a
+    3  sudo reboot
+    4  tree -L 1
+    5  sudo apt install tree
+    6  tree -L 1
+    7  cd /
+    8  tree -L 1
+    9  logout
+   10  tree -L 1
+   11  ls
+   12  cd /
+   13  tree -L 1
+   14  cat /etc/passwd
+   15  cat /etc/shadow
+   16  cat /etc/fstab 
+   17  logout
+   18  tree -L 1
+   19  cd /
+   20  tree -L 1
+   21  tree -L 2
+   22  tree -L 1
+   23  cat /proc/meminfo 
+   24  cat /proc/cpuinfo 
+   25  grep "Model" /proc/meminfo 
+   26  grep "Model" /proc/cpuinfo 
+   27  cat /proc/meminfo 
+   28  cat /proc/cpuinfo 
+   29  grep "model name" /proc/cpuinfo
+   30  cat /proc/cpuinfo | grep model
+   31  ls
+   32  cd home/spravce/
+   33  ls
+   34  ls -laR /etc/
+   35  ls -laR /etc/ > vypis-etx.txt
+   36  ls -laR /etc/ > ./vypis-etc.txt
+   37  sudo ls -laR /etc/ > ./vypis-etc.txt
+   38  ls
+   39  nano vypis-et
+   40  nano vypis-etc.txt 
+   41  clear
+   42  ls
+   43  curl
+   44  passwd
+   45  pwd
+   46  mkdir slozka
+   47  ls
+   48  ls -al
+   49  cd slozka/
+   50  touch soubor.txt
+   51  ls
+   52  nano soubor.txt 
+   53  ls
+   54  ls -al
+   55  cat soubor.txt 
+   56  cp soubor.txt soubor_2.txt 
+   57  ls 
+   58  rm soubor_2.txt 
+   59  ls
+   60  touch pepa.txt
+   61  touch marka.txt
+   62  nano marka.txt 
+   63  nano pepa.txt 
+   64  ls
+   65  ls -al
+   66  ls -l > vypis.txt
+   67  cat vypis.txt 
+   68  nano vypis.txt 
+   69  date
+   70  date >> zaznam.log
+   71  ls
+   72  caz zaznam.log 
+   73  cat zaznam.log 
+   74  echo "na konec souboru" >> zaznam.log
+   75  cat zaznam.log 
+   76  tail -n 20 /var/log/auth.log 
+   77  clear
+   78  tail -n 5 /var/log/auth.log 
+   79  cat /etc/passwd
+   80  cut -d: -f1 /etc/passwd
+   81  cut -d: -f1 /etc/passwd | sort
+   82  cut -d: -f1 /etc/passwd | sort | head -n 5
+   83  sudo apt celar
+   84  clear
+   85  sudo apt update 
+   86  sudo apt upgrade 
+   87  sudo poweroff
+   88  tree -L 1
+   89  clear
+   90  ip a
+   91  man bash
+   92  clear
+   93  man bash | tr A-Z a-z
+   94  clear
+   95  man bash | tr A-Z a-z | tr -c a-z "\\n"
+   96  clear
+   97  man bash | tr A-Z a-z | tr -c a-z "\\n" | grep .
+   98  clear
+   99  man bash | tr A-Z a-z | tr -c a-z "\\n" | grep . | sort
+  100  clear
+  101  man bash | tr A-Z a-z | tr -c a-z "\\n" | grep . | sort | uniq -c
+  102  clear
+  103  man bash | tr A-Z a-z | tr -c a-z "\\n" | grep . | sort | uniq -c | sort -nr
+  104  clear
+  105  man bash | tr A-Z a-z | tr -c a-z "\\n" | grep . | sort | uniq -c | sort -nr | head
+  106  man bash | tr A-Z a-z | tr -c a-z "\\n" | grep . | sort | uniq -c | sort -nr | head > statistika.txt
+  107  ls
+  108  systemctl status sshd
+  109  systemctl status apache2
+  110  systemctl status sshd
+  111  systemctl cat sshd
+  112  sudo journalctl -u sshd
+  113  ls -l /sbin/init 
+  114  pstree -p
+  115  clear
+  116  top
+  117  clear
+  118  htop
+  119  btop
+  120  ls
+  121  tree
+  122  tree -L 1 /
+  123  tree -L 2 /
+  124  clear
+  125  lsblk
+  126  lsblk -f
+  127  ncdu /etc
+  128  sudo apt install ncdu
+  129  ncdu /etc
+  130  ncdu du -h --max-depth=1 /var | sort -hr
+  131  sudo du -h --max-depth=1 /var | sort -hr
+  132  clear
+  133  cat /proc/cpuinfo 
+  134  cat /proc/cpuinfo | grep model
+  135  clear
+  136  cat /proc/cpuinfo | grep model
+  137  cat /proc/cpuinfo
+  138  cat /proc/version
+  139  clear 
+  140  grep /proc/meminfo
+  141  grep "MemTotal" /proc/meminfo
+  142  cat /proc/meminfo | grep MemTotal
+  143  pwd
+  144  ls
+  145  cd slozka/
+  146  ls
+  147  cd $HOME
+  148  pwd
+  149  fish
+  150  sudo snap install fish
+  151  sudo apt install fish
+  152  fish
+  153  git
+  154  git config --list
+  155  git config --global user.name zorzo
+  156  git config --global user.email jiri.heczko@gmail.com
+  157  git config --list
+  158  pwd
+  159  ssh-keygen -t ed25519 -C jiri.heczko@gmail.com
+  160  ls -al
+  161  cd .ssh/
+  162  ls -al
+  163  ca id_ed25519.pub 
+  164  cat id_ed25519.pub 
+  165  ssh -T git@github.com
+  166  cd ..
+  167  ls
+  168  mkdir code
+  169  cd code/
+  170  mkdir linux2c
+  171  ls
+  172  cd linux2c/
+  173  echo "# linux2c" >> README.md
+  174  git init
+  175  git add README.md
+  176  git commit -m "first commit"
+  177  git branch -M main
+  178  git remote add origin https://github.com/zorzo/linux2c.git
+  179  git push -u origin main
+  180  ls -al
+  181  git push
+  182  git push --set-upstream origin main
+  183  ssh -T git@github.com
+  184  git remote add origin https://github.com/zorzo/linux2c.git
+  185  git branch -M main
+  186  git push -u origin main
+  187  git remote -v
+  188  git push -u origin main
+  189  echo "# linux2c" >> README.md
+  190  git init
+  191  git add README.md
+  192  git commit -m "first commit"
+  193  git branch -M main
+  194  git remote add origin git@github.com:zorzo/linux2c.git
+  195  git push -u origin main
+  196  ls -al
+  197  rm -rf .git/
+  198  ls -al
+  199  echo "# linux2c" >> README.md
+  200  git init
+  201  git add README.md
+  202  git commit -m "first commit"
+  203  git branch -M main
+  204  git remote add origin git@github.com:zorzo/linux2c.git
+  205  git push -u origin main
+  206  ls -al
+  207  git status
+  208  git config --global init.defaultBranch main
+  209  git status
+  210  history
+  211  history > historie_2026-10-12.txt
